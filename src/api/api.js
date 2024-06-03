@@ -6,8 +6,8 @@ let get_api = async (endpoint) => {
   return res;
 };
 
-let post_api = async (endpoint) => {
-  let res = await axios.post(base_url);
+let post_api = async (endpoint, data) => {
+  let res = await axios.post(base_url + endpoint, data);
   return res;
 };
 
